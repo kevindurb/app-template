@@ -5,7 +5,7 @@ import { Service } from 'typedi'
 @Service()
 export class PingResolver {
 
-  @Query()
+  @Query(() => String)
   ping() {
     return 'pong'
   }
